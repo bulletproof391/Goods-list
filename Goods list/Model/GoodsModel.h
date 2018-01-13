@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
 
 @interface GoodsModel : NSObject
+
+@property (nonatomic, strong) RACSignal *hasUpdated;
+- (instancetype)init;
 
 @end

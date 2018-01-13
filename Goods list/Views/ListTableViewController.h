@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListTVCViewModel.h"
 
 @interface ListTableViewController : UITableViewController
+
+@property (strong, nonatomic) ListTVCViewModel *viewModel;
 
 @end

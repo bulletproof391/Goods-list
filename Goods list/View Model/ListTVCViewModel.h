@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
+#import "GoodsModel.h"
 
 @interface ListTVCViewModel : NSObject
+
+@property (nonatomic, strong) RACSignal *hasUpdated;
+- (instancetype)initWithModel:(GoodsModel *)model;
 
 @end

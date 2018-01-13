@@ -7,7 +7,21 @@
 //
 
 #import "ListTVCViewModel.h"
+#import "Goods.h"
+
+@interface ListTVCViewModel ()
+@property (nonatomic, strong) GoodsModel *model;
+@property (nonatomic, strong) NSMutableArray <Goods *> *goodsList;
+@end
 
 @implementation ListTVCViewModel
+
+- (instancetype)initWithModel:(GoodsModel *)model {
+    self = [super init];
+    if (self) {
+        _model = model;
+    }
+    return self;
+}
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ListTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    GoodsModel *goodsModel = [[GoodsModel alloc] init];
+    ListTVCViewModel *listTVCViewModel = [[ListTVCViewModel alloc] initWithModel:goodsModel];
+    
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    ListTableViewController *ltvc =  [navigationController.viewControllers objectAtIndex:0];
+    ltvc.viewModel = listTVCViewModel;
+    
     return YES;
 }
 
