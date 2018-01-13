@@ -16,6 +16,14 @@
 		0A2679CA2009CDB0007D98ED /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679C92009CDB0007D98ED /* ListTableViewController.m */; };
 		0A2679CD2009CDE5007D98ED /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679CC2009CDE5007D98ED /* GoodsModel.m */; };
 		0A2679D02009CE1C007D98ED /* ListTVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679CF2009CE1C007D98ED /* ListTVCViewModel.m */; };
+		0A2679D42009D51C007D98ED /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679D32009D51C007D98ED /* Goods.m */; };
+		0A2679D92009D5A4007D98ED /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679D82009D5A4007D98ED /* Book.m */; };
+		0A2679DD2009D7A6007D98ED /* ProgrammingBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */; };
+		0A2679E02009D7D0007D98ED /* CookeryBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679DF2009D7D0007D98ED /* CookeryBook.m */; };
+		0A2679E32009D821007D98ED /* EsoterikBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E22009D821007D98ED /* EsoterikBook.m */; };
+		0A2679E62009D862007D98ED /* Disk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E52009D862007D98ED /* Disk.m */; };
+		0A2679EA2009D88A007D98ED /* CompactDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E92009D88A007D98ED /* CompactDisk.m */; };
+		0A2679ED2009D89B007D98ED /* DigitalVersatileDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,22 @@
 		0A2679CC2009CDE5007D98ED /* GoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
 		0A2679CE2009CE1C007D98ED /* ListTVCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTVCViewModel.h; sourceTree = "<group>"; };
 		0A2679CF2009CE1C007D98ED /* ListTVCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTVCViewModel.m; sourceTree = "<group>"; };
+		0A2679D22009D51C007D98ED /* Goods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
+		0A2679D32009D51C007D98ED /* Goods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
+		0A2679D72009D5A4007D98ED /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		0A2679D82009D5A4007D98ED /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		0A2679DB2009D7A6007D98ED /* ProgrammingBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgrammingBook.h; sourceTree = "<group>"; };
+		0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgrammingBook.m; sourceTree = "<group>"; };
+		0A2679DE2009D7D0007D98ED /* CookeryBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookeryBook.h; sourceTree = "<group>"; };
+		0A2679DF2009D7D0007D98ED /* CookeryBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookeryBook.m; sourceTree = "<group>"; };
+		0A2679E12009D821007D98ED /* EsoterikBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EsoterikBook.h; sourceTree = "<group>"; };
+		0A2679E22009D821007D98ED /* EsoterikBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EsoterikBook.m; sourceTree = "<group>"; };
+		0A2679E42009D862007D98ED /* Disk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Disk.h; sourceTree = "<group>"; };
+		0A2679E52009D862007D98ED /* Disk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Disk.m; sourceTree = "<group>"; };
+		0A2679E82009D88A007D98ED /* CompactDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompactDisk.h; sourceTree = "<group>"; };
+		0A2679E92009D88A007D98ED /* CompactDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompactDisk.m; sourceTree = "<group>"; };
+		0A2679EB2009D89B007D98ED /* DigitalVersatileDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalVersatileDisk.h; sourceTree = "<group>"; };
+		0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalVersatileDisk.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +157,64 @@
 			children = (
 				0A2679CB2009CDE5007D98ED /* GoodsModel.h */,
 				0A2679CC2009CDE5007D98ED /* GoodsModel.m */,
+				0A2679D12009D4E8007D98ED /* Goods */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A2679D12009D4E8007D98ED /* Goods */ = {
+			isa = PBXGroup;
+			children = (
+				0A2679D22009D51C007D98ED /* Goods.h */,
+				0A2679D32009D51C007D98ED /* Goods.m */,
+				0A2679D52009D575007D98ED /* Books */,
+				0A2679D62009D580007D98ED /* Disks */,
+			);
+			path = Goods;
+			sourceTree = "<group>";
+		};
+		0A2679D52009D575007D98ED /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				0A2679D72009D5A4007D98ED /* Book.h */,
+				0A2679D82009D5A4007D98ED /* Book.m */,
+				0A2679DA2009D722007D98ED /* Kinds of books */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		0A2679D62009D580007D98ED /* Disks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2679E42009D862007D98ED /* Disk.h */,
+				0A2679E52009D862007D98ED /* Disk.m */,
+				0A2679E72009D870007D98ED /* Kind of disks */,
+			);
+			path = Disks;
+			sourceTree = "<group>";
+		};
+		0A2679DA2009D722007D98ED /* Kinds of books */ = {
+			isa = PBXGroup;
+			children = (
+				0A2679DB2009D7A6007D98ED /* ProgrammingBook.h */,
+				0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */,
+				0A2679DE2009D7D0007D98ED /* CookeryBook.h */,
+				0A2679DF2009D7D0007D98ED /* CookeryBook.m */,
+				0A2679E12009D821007D98ED /* EsoterikBook.h */,
+				0A2679E22009D821007D98ED /* EsoterikBook.m */,
+			);
+			path = "Kinds of books";
+			sourceTree = "<group>";
+		};
+		0A2679E72009D870007D98ED /* Kind of disks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2679E82009D88A007D98ED /* CompactDisk.h */,
+				0A2679E92009D88A007D98ED /* CompactDisk.m */,
+				0A2679EB2009D89B007D98ED /* DigitalVersatileDisk.h */,
+				0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */,
+			);
+			path = "Kind of disks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2679D42009D51C007D98ED /* Goods.m in Sources */,
 				0A2679CD2009CDE5007D98ED /* GoodsModel.m in Sources */,
+				0A2679E32009D821007D98ED /* EsoterikBook.m in Sources */,
+				0A2679DD2009D7A6007D98ED /* ProgrammingBook.m in Sources */,
 				0A2679B02009CA37007D98ED /* main.m in Sources */,
 				0A2679A22009CA37007D98ED /* AppDelegate.m in Sources */,
+				0A2679E62009D862007D98ED /* Disk.m in Sources */,
 				0A2679D02009CE1C007D98ED /* ListTVCViewModel.m in Sources */,
+				0A2679D92009D5A4007D98ED /* Book.m in Sources */,
+				0A2679E02009D7D0007D98ED /* CookeryBook.m in Sources */,
+				0A2679EA2009D88A007D98ED /* CompactDisk.m in Sources */,
 				0A2679CA2009CDB0007D98ED /* ListTableViewController.m in Sources */,
+				0A2679ED2009D89B007D98ED /* DigitalVersatileDisk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
