@@ -8,6 +8,12 @@
 
 #import "Goods.h"
 
+typedef NS_ENUM(NSInteger, BookType) {
+    BookTypeProgramming,
+    BookTypeCookery,
+    BookTypeEsoteric,
+};
+
 @interface Book : Goods
 @property NSInteger pagesCount;
 @end

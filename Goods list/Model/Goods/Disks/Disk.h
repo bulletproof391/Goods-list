@@ -8,6 +8,11 @@
 
 #import "Goods.h"
 
+typedef NS_ENUM(NSInteger, DiskType) {
+    DiskTypeCD,
+    DiskTypeDVD,
+};
+
 typedef NS_ENUM(NSInteger, DiskContentType) {
     DiskContentTypeMusic,
     DiskContentTypeVideo,
@@ -15,5 +20,5 @@ typedef NS_ENUM(NSInteger, DiskContentType) {
 };
 
 @interface Disk : Goods
-@property (readonly) DiskContentType contentType;
+@property DiskContentType contentType;
 @end

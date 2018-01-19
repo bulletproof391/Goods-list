@@ -7,6 +7,7 @@
 //
 
 #import "ListTableViewController.h"
+#import "GoodsTableViewCell.h"
 
 @interface ListTableViewController ()
 
@@ -18,10 +19,12 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self bindModel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +35,34 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return [self.viewModel numberOfSections];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [self.viewModel titleForHeaderInSection:section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.viewModel numberOfRowsInSection:section];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    GoodsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.viewModel = [self.viewModel getCellViewModelAtIndexPath:indexPath];
+    [cell initializeCell];
     
     return cell;
 }
-*/
+
+- (void)bindModel {
+    @weakify(self);
+    [[RACObserve(self.viewModel, hasUpdated) deliverOnMainThread] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+    }];
+}
 
 /*
 // Override to support conditional editing of the table view.

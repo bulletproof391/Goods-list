@@ -6,8 +6,8 @@
 //  Copyright © 2018 Дмитрий Вашлаев. All rights reserved.
 //
 
-#import "EsoterikBook.h"
+#import "EsotericBook.h"
 
-@implementation EsoterikBook
+@implementation EsotericBook
 
 @end

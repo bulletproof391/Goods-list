@@ -8,6 +8,6 @@
 
 #import "Book.h"
 
-@interface EsoterikBook : Book
+@interface EsotericBook : Book
 @property NSInteger minReaderAge;
 @end

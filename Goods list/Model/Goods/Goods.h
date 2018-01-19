@@ -15,5 +15,6 @@
 @property NSInteger price;
 @property (nonatomic, strong) NSString *barCode;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSURL *imageURL;
 
 @end

@@ -13,5 +13,5 @@
 
 @property (nonatomic, strong) RACSignal *hasUpdated;
 - (instancetype)init;
-
+- (NSMutableArray *)fetchData;
 @end

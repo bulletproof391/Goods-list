@@ -20,11 +20,13 @@
 		0A2679D92009D5A4007D98ED /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679D82009D5A4007D98ED /* Book.m */; };
 		0A2679DD2009D7A6007D98ED /* ProgrammingBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */; };
 		0A2679E02009D7D0007D98ED /* CookeryBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679DF2009D7D0007D98ED /* CookeryBook.m */; };
-		0A2679E32009D821007D98ED /* EsoterikBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E22009D821007D98ED /* EsoterikBook.m */; };
+		0A2679E32009D821007D98ED /* EsotericBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E22009D821007D98ED /* EsotericBook.m */; };
 		0A2679E62009D862007D98ED /* Disk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E52009D862007D98ED /* Disk.m */; };
 		0A2679EA2009D88A007D98ED /* CompactDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E92009D88A007D98ED /* CompactDisk.m */; };
 		0A2679ED2009D89B007D98ED /* DigitalVersatileDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */; };
 		0A604D51200A066D0015369B /* goods.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A604D50200A066D0015369B /* goods.json */; };
+		0ABEBF66200B9BBD00EAD624 /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBF65200B9BBD00EAD624 /* GoodsTableViewCell.m */; };
+		0ABEBF6A200BA21B00EAD624 /* CellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBF69200BA21B00EAD624 /* CellViewModel.m */; };
 		300AE483D92985C645F71C9F /* libPods-Goods list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5D43A300999BBED9FE31EB /* libPods-Goods list.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +67,8 @@
 		0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgrammingBook.m; sourceTree = "<group>"; };
 		0A2679DE2009D7D0007D98ED /* CookeryBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookeryBook.h; sourceTree = "<group>"; };
 		0A2679DF2009D7D0007D98ED /* CookeryBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookeryBook.m; sourceTree = "<group>"; };
-		0A2679E12009D821007D98ED /* EsoterikBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EsoterikBook.h; sourceTree = "<group>"; };
-		0A2679E22009D821007D98ED /* EsoterikBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EsoterikBook.m; sourceTree = "<group>"; };
+		0A2679E12009D821007D98ED /* EsotericBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EsotericBook.h; sourceTree = "<group>"; };
+		0A2679E22009D821007D98ED /* EsotericBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EsotericBook.m; sourceTree = "<group>"; };
 		0A2679E42009D862007D98ED /* Disk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Disk.h; sourceTree = "<group>"; };
 		0A2679E52009D862007D98ED /* Disk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Disk.m; sourceTree = "<group>"; };
 		0A2679E82009D88A007D98ED /* CompactDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompactDisk.h; sourceTree = "<group>"; };
@@ -74,6 +76,10 @@
 		0A2679EB2009D89B007D98ED /* DigitalVersatileDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalVersatileDisk.h; sourceTree = "<group>"; };
 		0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalVersatileDisk.m; sourceTree = "<group>"; };
 		0A604D50200A066D0015369B /* goods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goods.json; sourceTree = SOURCE_ROOT; };
+		0ABEBF64200B9BBD00EAD624 /* GoodsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
+		0ABEBF65200B9BBD00EAD624 /* GoodsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
+		0ABEBF68200BA21B00EAD624 /* CellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellViewModel.h; sourceTree = "<group>"; };
+		0ABEBF69200BA21B00EAD624 /* CellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellViewModel.m; sourceTree = "<group>"; };
 		2BEFBC0F9D4DFF3FE9A3628D /* Pods-Goods list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goods list.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goods list/Pods-Goods list.release.xcconfig"; sourceTree = "<group>"; };
 		FB5D43A300999BBED9FE31EB /* libPods-Goods list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goods list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +155,7 @@
 			children = (
 				0A2679C82009CDB0007D98ED /* ListTableViewController.h */,
 				0A2679C92009CDB0007D98ED /* ListTableViewController.m */,
+				0ABEBF63200B9B7800EAD624 /* Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			children = (
 				0A2679CE2009CE1C007D98ED /* ListTVCViewModel.h */,
 				0A2679CF2009CE1C007D98ED /* ListTVCViewModel.m */,
+				0ABEBF67200BA1E800EAD624 /* Cell View Model */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -210,8 +218,8 @@
 				0A2679DC2009D7A6007D98ED /* ProgrammingBook.m */,
 				0A2679DE2009D7D0007D98ED /* CookeryBook.h */,
 				0A2679DF2009D7D0007D98ED /* CookeryBook.m */,
-				0A2679E12009D821007D98ED /* EsoterikBook.h */,
-				0A2679E22009D821007D98ED /* EsoterikBook.m */,
+				0A2679E12009D821007D98ED /* EsotericBook.h */,
+				0A2679E22009D821007D98ED /* EsotericBook.m */,
 			);
 			path = "Kinds of books";
 			sourceTree = "<group>";
@@ -225,6 +233,24 @@
 				0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */,
 			);
 			path = "Kinds of disks";
+			sourceTree = "<group>";
+		};
+		0ABEBF63200B9B7800EAD624 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0ABEBF64200B9BBD00EAD624 /* GoodsTableViewCell.h */,
+				0ABEBF65200B9BBD00EAD624 /* GoodsTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0ABEBF67200BA1E800EAD624 /* Cell View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0ABEBF68200BA21B00EAD624 /* CellViewModel.h */,
+				0ABEBF69200BA21B00EAD624 /* CellViewModel.m */,
+			);
+			path = "Cell View Model";
 			sourceTree = "<group>";
 		};
 		0FC86E87D090C507437D7F29 /* Pods */ = {
@@ -398,9 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABEBF66200B9BBD00EAD624 /* GoodsTableViewCell.m in Sources */,
 				0A2679D42009D51C007D98ED /* Goods.m in Sources */,
 				0A2679CD2009CDE5007D98ED /* GoodsModel.m in Sources */,
-				0A2679E32009D821007D98ED /* EsoterikBook.m in Sources */,
+				0ABEBF6A200BA21B00EAD624 /* CellViewModel.m in Sources */,
+				0A2679E32009D821007D98ED /* EsotericBook.m in Sources */,
 				0A2679DD2009D7A6007D98ED /* ProgrammingBook.m in Sources */,
 				0A2679B02009CA37007D98ED /* main.m in Sources */,
 				0A2679A22009CA37007D98ED /* AppDelegate.m in Sources */,

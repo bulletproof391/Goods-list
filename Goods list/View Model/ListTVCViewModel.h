@@ -9,10 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa.h>
 #import "GoodsModel.h"
+#import "CellViewModel.h"
 
 @interface ListTVCViewModel : NSObject
 
 @property (nonatomic, strong) RACSignal *hasUpdated;
-- (instancetype)initWithModel:(GoodsModel *)model;
 
+- (instancetype)initWithModel:(GoodsModel *)model;
+- (NSInteger)numberOfSections;
+- (NSString *)titleForHeaderInSection:(NSInteger)section;
+- (NSInteger)numberOfRowsInSection:(NSInteger)section;
+- (CellViewModel *)getCellViewModelAtIndexPath:(NSIndexPath *)indexPath;
 @end

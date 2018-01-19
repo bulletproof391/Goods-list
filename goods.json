@@ -1,49 +1,49 @@
 {
-	"Books": [{
-			"name": "C++ for Dummies",
-			"price": 500,
-			"barCode": 123456789101,
-			"imageURL": "https://images.gr-assets.com/books/1410923991l/939194.jpg",
-			"bookType": 0,
-			"pagesCount": 300,
-			"programmingLanguage": "C++"
-		},
-		{
-			"name": "Вкусные истории",
-			"price": 600,
-			"barCode": 103456749151,
-			"imageURL": "http://ozon-st.cdn.ngenix.net/multimedia/1016015486.jpg",
-			"bookType": 1,
-			"pagesCount": 250,
-			"mainIngredient": "Мука"
-		},
-		{
-			"name": "Подсознание может все",
-			"price": 470,
-			"barCode": 823056849154,
-			"imageURL": "http://ozon-st.cdn.ngenix.net/multimedia/1018870196.jpg",
-			"bookType": 2,
-			"pagesCount": 250,
-			"minReaderAge": 18
-		}
-	],
-	"Disks": [{
-			"CD": [{
-				"name": "Последний альбом",
-				"price": 200,
-				"barCode": 925476784131,
-				"imageURL": "https://upload.wikimedia.org/wikipedia/ru/e/eb/NMC_PA_cover.jpg",
-				"contentType": 0
-			}]
-		},
-		{
-			"DVD": [{
-				"name": "Иностранец",
-				"price": 350,
-				"barCode": 325675884241,
-				"imageURL": "http://kinohod.ru/o/0c/91/0c915a03-09d9-4bc9-a99d-19d657bc4357.jpg",
-				"contentType": 1
-			}]
-		}
-	]
+    "Books": [
+              {
+              "name": "C++ for Dummies",
+              "price": 500,
+              "barCode": "123456789101",
+              "imageURL": "https://images.gr-assets.com/books/1410923991l/939194.jpg",
+              "bookType": 0,
+              "pagesCount": 300,
+              "programmingLanguage": "C++"
+              },
+              {
+              "name": "Вкусные истории",
+              "price": 600,
+              "barCode": "103456749151",
+              "imageURL": "http://ozon-st.cdn.ngenix.net/multimedia/1016015486.jpg",
+              "bookType": 1,
+              "pagesCount": 250,
+              "mainIngredient": "Мука"
+              },
+              {
+              "name": "Подсознание может все",
+              "price": 470,
+              "barCode": "823056849154",
+              "imageURL": "http://ozon-st.cdn.ngenix.net/multimedia/1018870196.jpg",
+              "bookType": 2,
+              "pagesCount": 250,
+              "minReaderAge": 18
+              }
+              ],
+    "Disks": [
+              {
+              "name": "Последний альбом",
+              "price": 200,
+              "barCode": "925476784131",
+              "imageURL": "https://upload.wikimedia.org/wikipedia/ru/e/eb/NMC_PA_cover.jpg",
+              "contentType": 0,
+              "diskType": 0
+              },
+              {
+              "name": "Иностранец",
+              "price": 350,
+              "barCode": "325675884241",
+              "imageURL": "http://kinohod.ru/o/0c/91/0c915a03-09d9-4bc9-a99d-19d657bc4357.jpg",
+              "contentType": 1,
+              "diskType":1
+              }
+              ]
 }
