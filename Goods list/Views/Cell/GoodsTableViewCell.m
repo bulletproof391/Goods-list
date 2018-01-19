@@ -7,24 +7,28 @@
 //
 
 #import "GoodsTableViewCell.h"
+#import <ReactiveCocoa.h>
 
 @implementation GoodsTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
+    [self initializeCell];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 
 - (void)initializeCell {
-    self.coverImage.image = [self.viewModel getImage];
-    self.name.text = [self.viewModel getName];
-    self.category.text = [self.viewModel getCategory];
+    @weakify(self);
+    [RACObserve(self, viewModel) subscribeNext:^(id x) {
+        @strongify(self);
+        self.coverImage.image = [self.viewModel getImage];
+        self.name.text = [self.viewModel getName];
+        self.category.text = [self.viewModel getCategory];
+    }];
 }
 @end

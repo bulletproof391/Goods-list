@@ -16,6 +16,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *category;
 
 @property (strong, nonatomic) CellViewModel *viewModel;
-
-- (void)initializeCell;
 @end

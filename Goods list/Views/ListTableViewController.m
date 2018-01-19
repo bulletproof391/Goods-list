@@ -51,7 +51,6 @@
     
     // Configure the cell...
     cell.viewModel = [self.viewModel getCellViewModelAtIndexPath:indexPath];
-    [cell initializeCell];
     
     return cell;
 }
