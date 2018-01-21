@@ -15,5 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *category;
 
-@property (strong, nonatomic) CellViewModel *viewModel;
+@property (weak, nonatomic) CellViewModel *viewModel;
 @end

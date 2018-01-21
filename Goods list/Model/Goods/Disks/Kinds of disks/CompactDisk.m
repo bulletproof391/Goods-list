@@ -10,4 +10,23 @@
 
 @implementation CompactDisk
 
+- (NSString *)getAdditionalInfo {
+    NSString *info;
+    switch (self.contentType) {
+        case DiskContentTypeMusic:
+        info = [NSString stringWithFormat:@"Music CD"];
+        break;
+        
+        case DiskContentTypeVideo:
+        info = [NSString stringWithFormat:@"Video CD"];
+        break;
+        
+        case DiskContentTypeSoftware:
+        info = [NSString stringWithFormat:@"Software CD"];
+        break;
+    }
+    
+    return info;
+}
+
 @end

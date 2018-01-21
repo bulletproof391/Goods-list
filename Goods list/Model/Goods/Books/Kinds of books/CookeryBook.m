@@ -10,4 +10,12 @@
 
 @implementation CookeryBook
 
+- (NSString *)getAdditionalInfo {
+    return [NSString stringWithFormat:@"Pages %li\nMain ingredient %@", self.pagesCount, self.mainIngredient];
+}
+
+- (NSString *)goodsCategory {
+    return @"Cookery";
+}
+
 @end

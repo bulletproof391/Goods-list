@@ -8,6 +8,9 @@
 
 #import "ListTableViewController.h"
 #import "GoodsTableViewCell.h"
+#import "DetailViewController.h"
+
+static NSString *ViewDetailSegue = @"ViewDetailSegue";
 
 @interface ListTableViewController ()
 
@@ -19,7 +22,7 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-//     self.clearsSelectionOnViewWillAppear = YES;
+    // self.clearsSelectionOnViewWillAppear = YES;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -98,14 +101,15 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:ViewDetailSegue]) {
+        DetailViewController *dvc = segue.destinationViewController;
+        dvc.viewModel = [self.viewModel getDetailViewModelAtIndexPath:[self.tableView indexPathForSelectedRow]];
+    }
 }
-*/
+
 
 @end

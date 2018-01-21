@@ -1,8 +1,8 @@
 //
-//  CellViewModel.h
+//  DetailVCViewModel.h
 //  Goods list
 //
-//  Created by Дмитрий Вашлаев on 14.01.18.
+//  Created by Дмитрий Вашлаев on 21.01.18.
 //  Copyright © 2018 Дмитрий Вашлаев. All rights reserved.
 //
 
@@ -15,11 +15,12 @@
 #import "CompactDisk.h"
 #import "DigitalVersatileDisk.h"
 
-@interface CellViewModel : NSObject
+@interface DetailVCViewModel : NSObject
 
 - (instancetype)initWithGoods:(Goods *)goods;
-- (RACSignal *)signalForLoadingImage;
+- (RACSignal *)getImage;
+- (NSString *)getPrice;
 - (NSString *)getName;
-- (NSString *)getCategory;
-
+- (NSString *)getBarcode;
+- (NSString *)getAdditionalInfo;
 @end

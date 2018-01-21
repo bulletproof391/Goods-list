@@ -17,4 +17,7 @@
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSURL *imageURL;
 
+- (NSString *)getAdditionalInfo;
+- (NSString *)goodsCategory;
+
 @end

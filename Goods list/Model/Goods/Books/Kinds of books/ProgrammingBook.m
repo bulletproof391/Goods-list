@@ -10,4 +10,11 @@
 
 @implementation ProgrammingBook
 
+- (NSString *)getAdditionalInfo {
+    return [NSString stringWithFormat:@"Pages %li\nProgramming language %@", self.pagesCount, self.programmingLanguage];
+}
+
+- (NSString *)goodsCategory {
+    return @"Programming";
+}
 @end

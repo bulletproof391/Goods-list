@@ -49,6 +49,7 @@ typedef NS_ENUM(NSInteger, SectionIndex) {
         
         for (Goods *item in section) {
             CellViewModel *cellViewModel = [[CellViewModel alloc] initWithGoods:item];
+            RAC(item, image) = [cellViewModel signalForLoadingImage];
             [sectionViewModels addObject:cellViewModel];
         }
         
@@ -85,4 +86,8 @@ typedef NS_ENUM(NSInteger, SectionIndex) {
     return [((NSArray *)self.cellViewModelsList[indexPath.section]) objectAtIndex:indexPath.row];
 }
 
+- (DetailVCViewModel *)getDetailViewModelAtIndexPath:(NSIndexPath *)indexPath {
+    Goods *item = [((NSArray *)self.goodsList[indexPath.section]) objectAtIndex:indexPath.row];
+    return [[DetailVCViewModel alloc] initWithGoods:item];
+}
 @end

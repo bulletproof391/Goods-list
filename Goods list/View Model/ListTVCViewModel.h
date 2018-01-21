@@ -10,6 +10,7 @@
 #import <ReactiveCocoa.h>
 #import "GoodsModel.h"
 #import "CellViewModel.h"
+#import "DetailVCViewModel.h"
 
 @interface ListTVCViewModel : NSObject
 
@@ -20,4 +21,5 @@
 - (NSString *)titleForHeaderInSection:(NSInteger)section;
 - (NSInteger)numberOfRowsInSection:(NSInteger)section;
 - (CellViewModel *)getCellViewModelAtIndexPath:(NSIndexPath *)indexPath;
+- (DetailVCViewModel *)getDetailViewModelAtIndexPath:(NSIndexPath *)indexPath;
 @end

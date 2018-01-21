@@ -10,4 +10,23 @@
 
 @implementation DigitalVersatileDisk
 
+- (NSString *)getAdditionalInfo {
+    NSString *info;
+    switch (self.contentType) {
+        case DiskContentTypeMusic:
+        info = [NSString stringWithFormat:@"Music DVD"];
+        break;
+        
+        case DiskContentTypeVideo:
+        info = [NSString stringWithFormat:@"Video DVD"];
+        break;
+        
+        case DiskContentTypeSoftware:
+        info = [NSString stringWithFormat:@"Software DVD"];
+        break;
+    }
+    
+    return info;
+}
+
 @end

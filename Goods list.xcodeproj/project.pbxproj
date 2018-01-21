@@ -24,6 +24,8 @@
 		0A2679E62009D862007D98ED /* Disk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E52009D862007D98ED /* Disk.m */; };
 		0A2679EA2009D88A007D98ED /* CompactDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679E92009D88A007D98ED /* CompactDisk.m */; };
 		0A2679ED2009D89B007D98ED /* DigitalVersatileDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */; };
+		0A481AFC20149FC900D55E9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A481AFB20149FC900D55E9B /* DetailViewController.m */; };
+		0A481AFF2014A02C00D55E9B /* DetailVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A481AFE2014A02C00D55E9B /* DetailVCViewModel.m */; };
 		0A604D51200A066D0015369B /* goods.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A604D50200A066D0015369B /* goods.json */; };
 		0ABEBF66200B9BBD00EAD624 /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBF65200B9BBD00EAD624 /* GoodsTableViewCell.m */; };
 		0ABEBF6A200BA21B00EAD624 /* CellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBF69200BA21B00EAD624 /* CellViewModel.m */; };
@@ -75,6 +77,10 @@
 		0A2679E92009D88A007D98ED /* CompactDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompactDisk.m; sourceTree = "<group>"; };
 		0A2679EB2009D89B007D98ED /* DigitalVersatileDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalVersatileDisk.h; sourceTree = "<group>"; };
 		0A2679EC2009D89B007D98ED /* DigitalVersatileDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalVersatileDisk.m; sourceTree = "<group>"; };
+		0A481AFA20149FC900D55E9B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0A481AFB20149FC900D55E9B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0A481AFD2014A02C00D55E9B /* DetailVCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailVCViewModel.h; sourceTree = "<group>"; };
+		0A481AFE2014A02C00D55E9B /* DetailVCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailVCViewModel.m; sourceTree = "<group>"; };
 		0A604D50200A066D0015369B /* goods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goods.json; sourceTree = SOURCE_ROOT; };
 		0ABEBF64200B9BBD00EAD624 /* GoodsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
 		0ABEBF65200B9BBD00EAD624 /* GoodsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 				0A2679C82009CDB0007D98ED /* ListTableViewController.h */,
 				0A2679C92009CDB0007D98ED /* ListTableViewController.m */,
 				0ABEBF63200B9B7800EAD624 /* Cell */,
+				0A481AFA20149FC900D55E9B /* DetailViewController.h */,
+				0A481AFB20149FC900D55E9B /* DetailViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +174,8 @@
 				0A2679CE2009CE1C007D98ED /* ListTVCViewModel.h */,
 				0A2679CF2009CE1C007D98ED /* ListTVCViewModel.m */,
 				0ABEBF67200BA1E800EAD624 /* Cell View Model */,
+				0A481AFD2014A02C00D55E9B /* DetailVCViewModel.h */,
+				0A481AFE2014A02C00D55E9B /* DetailVCViewModel.m */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -427,6 +437,7 @@
 				0ABEBF66200B9BBD00EAD624 /* GoodsTableViewCell.m in Sources */,
 				0A2679D42009D51C007D98ED /* Goods.m in Sources */,
 				0A2679CD2009CDE5007D98ED /* GoodsModel.m in Sources */,
+				0A481AFC20149FC900D55E9B /* DetailViewController.m in Sources */,
 				0ABEBF6A200BA21B00EAD624 /* CellViewModel.m in Sources */,
 				0A2679E32009D821007D98ED /* EsotericBook.m in Sources */,
 				0A2679DD2009D7A6007D98ED /* ProgrammingBook.m in Sources */,
@@ -435,6 +446,7 @@
 				0A2679E62009D862007D98ED /* Disk.m in Sources */,
 				0A2679D02009CE1C007D98ED /* ListTVCViewModel.m in Sources */,
 				0A2679D92009D5A4007D98ED /* Book.m in Sources */,
+				0A481AFF2014A02C00D55E9B /* DetailVCViewModel.m in Sources */,
 				0A2679E02009D7D0007D98ED /* CookeryBook.m in Sources */,
 				0A2679EA2009D88A007D98ED /* CompactDisk.m in Sources */,
 				0A2679CA2009CDB0007D98ED /* ListTableViewController.m in Sources */,
