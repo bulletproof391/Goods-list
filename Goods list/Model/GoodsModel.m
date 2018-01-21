@@ -7,7 +7,6 @@
 //
 
 #import "GoodsModel.h"
-#import "Goods.h"
 #import "ProgrammingBook.h"
 #import "CookeryBook.h"
 #import "EsotericBook.h"

@@ -9,11 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa.h>
 #import "Goods.h"
-#import "ProgrammingBook.h"
-#import "CookeryBook.h"
-#import "EsotericBook.h"
-#import "CompactDisk.h"
-#import "DigitalVersatileDisk.h"
 
 @interface DetailVCViewModel : NSObject
 
