@@ -9,10 +9,10 @@
 #import "CellViewModel.h"
 
 @interface CellViewModel ()
-@property (weak, nonatomic) NSString *name;
-@property (weak, nonatomic) NSString *category;
-@property (weak, nonatomic) UIImage *image;
-@property (weak, nonatomic) NSURL *imageURL;
+//@property (weak, nonatomic) NSString *name;
+//@property (weak, nonatomic) NSString *category;
+//@property (weak, nonatomic) UIImage *image;
+//@property (weak, nonatomic) NSURL *imageURL;
 @end
 
 @implementation CellViewModel
@@ -23,8 +23,6 @@
     if (self) {
         self.name = goods.name;
         self.category = [self goodsCategory:goods];
-//        self.image = goods.image;
-#warning implement image downloading
         self.imageURL = goods.imageURL;
     }
     
@@ -57,6 +55,22 @@
     return nil;
 }
 
+#pragma mark - Networking
+- (RACSignal *)signalForLoadingImage {
+    RACScheduler *scheduler = [RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground];
+
+    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSData *data = [NSData dataWithContentsOfURL:self.imageURL];
+        UIImage *image = [UIImage imageWithData:data];
+        self.image = image;
+        [subscriber sendNext:image];
+        [subscriber sendCompleted];
+        return nil;
+    }] subscribeOn:scheduler];
+}
+
+
+#pragma mark - Methods for View
 - (UIImage *)getImage {
     return self.image;
 }

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
 #import "Goods.h"
 #import "ProgrammingBook.h"
 #import "CookeryBook.h"
@@ -22,6 +23,12 @@ static NSString *GoodsCategoryVideoDisk = @"Видео";
 static NSString *GoodsCategorySoftwareDisk = @"ПО";
 
 @interface CellViewModel : NSObject
+@property (weak, nonatomic) NSString *name;
+@property (weak, nonatomic) NSString *category;
+@property (weak, nonatomic) UIImage *image;
+@property (weak, nonatomic) NSURL *imageURL;
+
+- (RACSignal *)signalForLoadingImage;
 - (instancetype)initWithGoods:(Goods *)goods;
 - (UIImage *)getImage;
 - (NSString *)getName;

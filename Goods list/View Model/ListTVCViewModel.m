@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, SectionIndex) {
     self = [super init];
     if (self) {
         _model = model;
-        [RACObserve(self.model, hasUpdated) subscribeNext:^(id x) {
+        [RACObserve(self, model.hasUpdated) subscribeNext:^(id x) {
             self.goodsList = [self.model fetchData];
             self.cellViewModelsList = [self initializeCellViewModelsList];
             self.hasUpdated = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
