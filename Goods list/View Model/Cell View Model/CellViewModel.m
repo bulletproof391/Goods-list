@@ -42,16 +42,13 @@
         
         [subscriber sendNext:self.image];
         [subscriber sendCompleted];
+        
         return nil;
     }] subscribeOn:scheduler];
 }
 
 
 #pragma mark - Methods for View
-- (UIImage *)getImage {
-    return self.image;
-}
-
 - (NSString *)getName {
     return self.name;
 }

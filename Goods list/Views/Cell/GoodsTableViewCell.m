@@ -26,7 +26,9 @@
     @weakify(self);
     [RACObserve(self, viewModel) subscribeNext:^(id x) {
         @strongify(self);
-        RAC(self, coverImage.image) = [[self.viewModel signalForLoadingImage] deliverOnMainThread];
+        [[[self.viewModel signalForLoadingImage] deliverOnMainThread] subscribeNext:^(UIImage *x) {
+            self.coverImage.image = x;
+        }];
         self.name.text = [self.viewModel getName];
         self.category.text = [self.viewModel getCategory];
     }];

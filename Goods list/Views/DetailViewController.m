@@ -27,14 +27,17 @@
 }
 
 - (void)initializeView {
-    self.navigationItem.title = [self.viewModel getName];
-    self.priceLabel.text = [self.viewModel getPrice];
-    self.barcodeLabel.text = [self.viewModel getBarcode];
-    self.additionalInfoLabel.text = [self.viewModel getAdditionalInfo];
-    
     @weakify(self);
     [RACObserve(self, viewModel) subscribeNext:^(id x) {
-        RAC(self, coverImage.image) = [[self.viewModel getImage] deliverOnMainThread];
+        @strongify(self);
+        [[[self.viewModel getImage] deliverOnMainThread] subscribeNext:^(UIImage *x) {
+            self.coverImage.image = x;
+        }];
+        
+        self.navigationItem.title = [self.viewModel getName];
+        self.priceLabel.text = [self.viewModel getPrice];
+        self.barcodeLabel.text = [self.viewModel getBarcode];
+        self.additionalInfoLabel.text = [self.viewModel getAdditionalInfo];
     }];
 }
 
